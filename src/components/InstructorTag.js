@@ -1,7 +1,13 @@
-const InstructorTag = () => {
-  // Create the InstructorTag component here
+import { TagWrapper } from "../styles";
 
-  return <></>;
+const InstructorTag = (name, github, emoji) => {
+  return (
+    <TagWrapper>
+      <span className="Emoji">{emoji}</span>
+      <span className="Name">{name}</span>
+      <span className="GoToGithub">{github}</span>
+    </TagWrapper>
+  );
 };
 
 export default InstructorTag;
